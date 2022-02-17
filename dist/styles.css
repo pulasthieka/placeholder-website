@@ -13,14 +13,14 @@ body {
   display: inline-flex;
   margin: auto;
   text-align: center;
-  font-size: small;
+  font-size: 1em;
 }
 .contactUs a {
   color: black;
 }
 .svg-animated-logo {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 500px;
+  max-height: 400px;
   width: 50vw;
 }
 .logo-tagline {
@@ -30,7 +30,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
   .logo-tagline {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 }
 .devonix-clip-path-logo {
