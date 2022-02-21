@@ -31,5 +31,5 @@ You will have to ensure that you have verified ownership of the domain at Google
 Connect the `www` subdmain as well. Add the given A, AAAA, and CNAME records to your domain with Cloudflare. And your App Engine will be connected to your domain
 
 ## Other
-For AWS instructions see [Instructions for EC2](./Instructions_for_EC2.md)
+For AWS instructions see [Instructions for EC2](documentation/Instructions_for_EC2.md)
 
