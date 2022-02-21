@@ -3,9 +3,8 @@
 Boilerplate code to create a server on Google Cloud and serve web pages to the public using a Node JS server. Quickly create a placeholder website for your domain with this.
 ## Setting up on GCP
 1. Create a new project on Google Cloud https://console.cloud.google.com/
-2. Install Google Cloud CLI, login and select the project. 
-3. 
-
+2. Install [GCloud CLI](https://cloud.google.com/sdk/docs/install-sdk), login and select the project. 
+3. Run `gcloud app deploy` to deploy your application. The folder structure is setup in the simplest way to get started. This command will upload the files, install packages and run `npm start`
 
 
 ## Connecting Cloudflare
