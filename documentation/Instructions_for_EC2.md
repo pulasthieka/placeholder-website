@@ -7,7 +7,15 @@ ssh -i "~/Downloads/aws_webserver.pem" ubuntu@ec2-3-83-163-243.compute-1.amazona
 ```
 
 ## Install NodeJS
-sudo snap install node --classic
+The easiest way is to install NodeJS via the `snap` package manager `sudo snap install node  --classic` . However this kind of installation might cause some issues due to running with lesser privileges. 
+
+A better way to do this is via [NVM](https://github.com/nvm-sh/nvm).
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+nvm install 16.3.0 # for a specific version
+nvm use 16.3.0
+```
+
 
 ### Transferring files
 In the event that git is not installed. Use wormhole.
@@ -54,6 +62,12 @@ server {
 Refer https://www.dev2qa.com/how-to-run-node-js-server-in-background/
 ```bash
 nohup node server.js  > output.log & disown
+```
+
+A better way is to use PM2
+```bash
+npm install pm2 -g
+pm2 start server.js
 ```
 
 ## Installing MongoDB
@@ -109,8 +123,8 @@ sudo systemctl status mongod
 ```
 
 ## Additional Resources
-https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
-https://medium.com/idomongodb/how-to-npm-run-start-at-the-background-%EF%B8%8F-64ddda7c1f1
-https://medium.com/geekculture/deploying-a-react-app-and-a-node-js-server-on-a-single-machine-with-pm2-and-nginx-15f17251ee74
-https://keithweaverca.medium.com/setting-up-mern-stack-on-aws-ec2-6dc599be4737
-https://unix.stackexchange.com/questions/420594/why-process-killed-with-nohup
+- https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page/
+- https://medium.com/idomongodb/how-to-npm-run-start-at-the-background-%EF%B8%8F-64ddda7c1f1
+- https://medium.com/geekculture/deploying-a-react-app-and-a-node-js-server-on-a-single-machine-with-pm2-and-nginx-15f17251ee74
+- https://keithweaverca.medium.com/setting-up-mern-stack-on-aws-ec2-6dc599be4737
+- https://unix.stackexchange.com/questions/420594/why-process-killed-with-nohup
