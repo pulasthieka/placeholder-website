@@ -2,9 +2,7 @@
   "name": "devonix",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "node server.js",
-    "build": "ng build",
     "deploy": "gcloud app deploy",
     "test": "ng test",
     "lint": "ng lint",
