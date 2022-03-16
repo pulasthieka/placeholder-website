@@ -1,6 +1,11 @@
+[![Deploy to Cyclic](https://deploy.cyclic.app/button.svg)](https://deploy.cyclic.app/)
 # Placeholder Website
 
 Boilerplate code to create a server on Google Cloud and serve web pages to the public using a Node JS server. Quickly create a placeholder website for your domain with this.
+
+## Deploy to Cyclic
+Cyclic is a very easy way to deploy a full stack serverless app. Check it out [here](https://www.cyclic.sh/) 
+
 ## Setting up on GCP
 1. Create a new project on Google Cloud https://console.cloud.google.com/
 2. Install [GCloud CLI](https://cloud.google.com/sdk/docs/install-sdk), login and select the project. 
